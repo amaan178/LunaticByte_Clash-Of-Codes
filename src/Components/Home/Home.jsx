@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./home.css";
 import video from "../../Assests/video2.mp4";
 import { GrLocation } from "react-icons/gr";
@@ -11,6 +11,29 @@ import {BsListTask} from 'react-icons/bs'
 import {TbApps} from 'react-icons/tb'
 
 export default function Home() {
+  const [rangeType, setRangeType] = useState('linear');
+  const [rangeValue, setRangeValue] = useState(50);
+
+  const handleRangeChange = (event) => {
+    const value = event.target.value;
+
+    if (rangeType === 'logarithmic') {
+      // Convert range value from logarithmic scale to linear scale
+      const min = 1;
+      const max = 100;
+      const logValue = Math.log(value) / Math.log(max / min);
+      const linearValue = logValue * (max - min) + min;
+      setRangeValue(linearValue);
+    } else {
+      setRangeValue(value);
+    }
+  };
+
+  const handleRangeTypeChange = (event) => {
+    const value = event.target.value;
+    setRangeType(value);
+  };
+  
   return (
     <section className="home">
       <div className="overlay"></div>
@@ -38,10 +61,11 @@ export default function Home() {
           <div className="priceInput">
             <div className="label_total flex">
               <label htmlFor="price">Max Price:</label>
-              <h3 className="total">$5000</h3>
+              <h3 className="total">₹{rangeValue}</h3>
             </div>
             <div className="input flex">
-              <input type="range" max="5000" min="1000" />
+            <input type="range" min="0" max="1000000" value={rangeValue} onChange={handleRangeChange} />
+      
             </div>
           </div>
           <div className="searchOptions flex">
