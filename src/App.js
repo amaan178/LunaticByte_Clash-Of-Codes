@@ -5,15 +5,20 @@ import Navbar from './Components/Navbar/Navbar';
 import Main from './Components/Main/Main';
 import Footer from './Components/Footer/Footer';
 import About from './Components/About/About';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import SafetyMeasures from './Components/SafetyMeasures/SafetyMeasures';
+import HomePage from './Components/HomePage/HomePage';
+;
 
 function App() {
   return (
     <>
-      <Navbar/>
-      <Home/>
-      <About/>
-      <Main/>
-      <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path='/' element={<HomePage />} />
+          <Route exact path="safety-measures" element={<SafetyMeasures />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

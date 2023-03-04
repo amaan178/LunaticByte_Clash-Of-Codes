@@ -2,13 +2,18 @@ import { useEffect } from 'react'
 import './About.css'
 import img9 from "../../Assests/travel_around_the_world.png";
 import {HiOutlineClipboardCheck} from 'react-icons/hi'
+import { useNavigate } from 'react-router';
+
+
 
 const AboutPage = () => {
 	useEffect(() => {
 		document.body.scrollTop = 0 // For Safari
 		document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
 	}, [])
-
+    
+    const navigate = useNavigate();
+    const handleOnClick = () => navigate('/safety-measures');
 	return (
 		<div className='about'>
             <div className='row custom-margin'>
@@ -24,7 +29,7 @@ const AboutPage = () => {
                         multinational companies and also in the universities in India and abroad
                         as they pursue their higher education.
                     </p>
-                    <button className="btn flex">
+                    <button className="btn flex" onClick={handleOnClick}>
                       Our Safety Measures <HiOutlineClipboardCheck className="icon"/>
                     </button>
                 </div>
