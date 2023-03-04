@@ -93,8 +93,8 @@
   justify-content: space-between;
   padding: 1rem;
   margin: 1rem 0;
-  border-top: 1.5px solid var(--gre);
-  border-bottom: 1.5px solid var(--gre);
+  border-top: 1.5px solid var(--gradientColor);
+  border-bottom: 1.5px solid var(--gradientColor);
 }
 .main .secContent .singleDestination .cardInfo .grade {
   color: var(--textColor);
