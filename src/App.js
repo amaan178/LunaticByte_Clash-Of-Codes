@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SafetyMeasures from './Components/SafetyMeasures/SafetyMeasures';
 import Login from '../src/Components/Login/Login';
+import Signin from './Components/Signin/Signin';
 import HomePage from './Components/HomePage/HomePage';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route exact path='/' element={<Login />} />
           <Route exact path='/home' element={<HomePage />} />
           <Route exact path='/login' element={<Login />} />
+          <Route exact path = "/sign-up" element={<Signin/>}/>
           <Route exact path="safety-measures" element={<SafetyMeasures />} />
         </Routes>
       </BrowserRouter>

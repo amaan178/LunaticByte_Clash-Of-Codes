@@ -67,7 +67,7 @@ a {
   }
   .header .navBar .navLists .navItem .navLink {
     color: var(--textColor);
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     font-weight: 600;
   }
   .header .navBar .navLists .navItem .navLink:hover {
