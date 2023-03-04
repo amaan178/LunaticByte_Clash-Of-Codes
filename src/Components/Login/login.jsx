@@ -56,7 +56,7 @@ function Login() {
 
 
   onAuthStateChanged(auth, (currentUser) => {
-    if (currentUser) navigate("/dashboard");
+    if (currentUser) navigate("/home");
   });
 
   return (
