@@ -1,0 +1,34 @@
+.about {
+    margin-top: 20px;
+    padding: 72px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 35px;
+}
+.aboutBanner {
+    width: 80vh;
+}
+
+.secTitle {
+    .title {
+        position: relative;
+        width: max-content;
+        color: var(--textColor);
+        margin: 1rem 0;
+        z-index: 2;
+        &::after {
+            position: absolute;
+            content: '';
+            background: var(--SecondayColor);
+            height: 5px;
+            width: 60px !important;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+}
