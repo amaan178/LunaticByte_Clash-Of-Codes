@@ -11,7 +11,9 @@
     --bodyColor: rgb(240,240,246)
     --cardBG: rgb(225,225,235)
 }
-
+a {
+    text-decoration: none;
+  }
 .header{
     position: fixed;
     display: flex;
@@ -61,7 +63,7 @@
                 padding: .5rem 0;
 
                 .navItem{
-                    padding: .5rem 0;
+                    padding: 0;
 
                     .navLink{
                         color: var(--textColor);
