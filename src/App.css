@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Navbar */
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.grid{
+  display: grid;
+  align-items: center;
+}
+
+.btn{
+  padding: .6rem 1.5rem;
+  background: var(--gradientColor);
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.icon{
+  font-size: 2rem;
+  cursor: pointer;
+}
