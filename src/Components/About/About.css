@@ -32,4 +32,16 @@
   right: 0;
   bottom: 0;
   z-index: -1;
+}
+
+.btn {
+  margin-top: 1rem;
+  color: var(--whiteColor);
+  font-weight: 600;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.btn .icon {
+  align-self: center;
+  font-size: 18px;
 }/*# sourceMappingURL=About.css.map */

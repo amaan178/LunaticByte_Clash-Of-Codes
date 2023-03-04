@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import './About.css'
 import img9 from "../../Assests/travel_around_the_world.png";
+import {HiOutlineClipboardCheck} from 'react-icons/hi'
 
 const AboutPage = () => {
 	useEffect(() => {
@@ -23,6 +24,9 @@ const AboutPage = () => {
                         multinational companies and also in the universities in India and abroad
                         as they pursue their higher education.
                     </p>
+                    <button className="btn flex">
+                      Our Safety Measures <HiOutlineClipboardCheck className="icon"/>
+                    </button>
                 </div>
             </div>
 		</div>
