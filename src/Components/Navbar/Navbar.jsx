@@ -55,6 +55,10 @@ const Navbar = () => {
             hide={toggle}
           />
 
+          <button className='btn' onClick={handleShow}>
+            <a href='#'>LOGOUT</a>
+          </button>
+
           </ul>
           <div onClick={removeNavbar} className="closeNavbar">
             <AiFillCloseCircle className='icon'/>
