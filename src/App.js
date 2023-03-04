@@ -5,6 +5,15 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import Login from './Components/Login/login';
 import SignIn from './Components/SignIn/SignIn';
 
+import Home from './Components/Home/Home';
+import Navbar from './Components/Navbar/Navbar';
+import Main from './Components/Main/Main';
+import Footer from './Components/Footer/Footer';
+import About from './Components/About/About';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import SafetyMeasures from './Components/SafetyMeasures/SafetyMeasures';
+import HomePage from './Components/HomePage/HomePage';
+;
 
 function App() {
   return (
@@ -27,13 +36,12 @@ function App() {
         <Route exact path = "*" element={<Login/>}/>
         <Route exact path = "/sign-up" element={<SignIn/>}/>
         <Route exact path = "/dashboard" element={<Dashboard/>}/>
-      </Routes>
+          <Route exact path='/' element={<HomePage />} />
+          <Route exact path="safety-measures" element={<SafetyMeasures />} />
+        </Routes>
       </BrowserRouter>
-      {/* <Login/>
-      <SignIn/> */}
     </div>
     </>
-    
   );
 }
 
