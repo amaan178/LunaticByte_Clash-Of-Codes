@@ -2,11 +2,7 @@ import React,{useState} from 'react'
 import './navbar.css'
 import {SiYourtraveldottv} from 'react-icons/si'
 import {AiFillCloseCircle} from 'react-icons/ai'
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Modal from 'react-bootstrap/Modal';
 import {TbGridDots} from 'react-icons/tb'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Navbar = () => {
   const[active, setActive] = useState('navBar')
@@ -67,7 +63,7 @@ const Navbar = () => {
         <div onClick={showNav} className="toggleNavbar">
           <TbGridDots className='icon'/>
         </div>
-        <Modal show={show} onHide={handleClose}>
+        {/* <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
@@ -98,7 +94,7 @@ const Navbar = () => {
             Save Changes
           </Button>
         </Modal.Footer>
-      </Modal>
+      </Modal> */}
       </header>
     </section>
   )
