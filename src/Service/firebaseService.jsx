@@ -83,6 +83,25 @@ class todoDataService {
     setUsers(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
   };
 }
+const dbInstance2 = collection(database, "enquriy");
+
+class enquireService {
+
+  addEnquiry = (data) => {
+    return addDoc(dbInstance2, {
+      email: data.email,
+      package: data.package_name
+    }).then(() => {
+     alert("successfully sent");
+    });
+  };
+
+  getUser = () => {
+    const docRef = doc(database, "users", auth.currentUser.uid);
+    return docRef;
+  };
+}
 export default new userDataService();
 todoDataService = new todoDataService();
-export { todoDataService };
+enquireService = new enquireService();
+export { todoDataService,enquireService };
