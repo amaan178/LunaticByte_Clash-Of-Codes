@@ -3,6 +3,7 @@ import "./home.css";
 import video from "../../Assests/video2.mp4";
 import { GrLocation } from "react-icons/gr";
 import { HiFilter, HiOutlineClipboardCheck, HiOutlineLocationMarker } from "react-icons/hi";
+import {BsSearch} from "react-icons/bs";
 import { FiFacebook } from "react-icons/fi";
 import { AiOutlineInstagram } from "react-icons/ai";
 import {SiTripadvisor} from 'react-icons/si'
@@ -198,9 +199,9 @@ export default function Home() {
       
             </div>
           </div>
-          <div className="searchOptions flex"  onClick={handleSubmit} >
-            <HiFilter className="icon" />
-            <span>MORE FILTERS</span>
+          <div className="searchOptions flex"   onClick={handleSubmit} >
+            <BsSearch className="icon" />
+            <span>search via map</span>
           </div>
         </div>
 
