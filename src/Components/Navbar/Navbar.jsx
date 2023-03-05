@@ -42,7 +42,7 @@ const Navbar = () => {
       <header className='header flex'>
         <div className='logoDiv'>
           <a href="#" className='logo flex'>
-            <h1><SiYourtraveldottv className='icon'/>Lunatic.</h1>
+            <h1><SiYourtraveldottv className='icon' style={{marginRight:"8px"}}/>Lunatic.</h1>
           </a>
         </div>
 
@@ -65,7 +65,7 @@ const Navbar = () => {
               <Link to="news" spy={true} smooth={true} offset={50} duration={500} className="navLink">News</Link>
             </li>
 
-          <button className='btn' onClick={toggle}>
+          <button className='btn' style={{marginTop:"0rem"}} onClick={toggle}>
             <a href='#'>BOOK NOW</a>
           </button>
           <Modal
@@ -73,7 +73,7 @@ const Navbar = () => {
             hide={toggle}
           />
 
-          <button className='btn' onClick={handleSignOut}>
+          <button className='btn' style={{marginTop:"0rem"}} onClick={handleSignOut}>
             <a href='#'>LOGOUT</a>
           </button>
 
