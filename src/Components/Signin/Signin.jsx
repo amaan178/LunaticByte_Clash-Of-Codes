@@ -76,7 +76,7 @@ function SignIn() {
         });
   };
 
-
+  const handleOnClick = () => navigate('/login');
   onAuthStateChanged(auth, (currentUser) => {
     if (currentUser) navigate("/home");
   });
@@ -114,6 +114,9 @@ function SignIn() {
                 </div>
                 <button title="Sign In" type="submit" class="sign-in_btn_signup" onClick={handleSubmit}>
                     <span>Sign In</span>
+                </button>
+                <button title="Sign In" className="sign-in_ggl_login" onClick={handleOnClick}>
+                    <span>Already an User? Click here to login in</span>
                 </button>
             </div>
     </div>
