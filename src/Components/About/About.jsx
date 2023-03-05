@@ -21,13 +21,8 @@ const AboutPage = () => {
                 <div className="secTitle">
                     <h3 className="title">About Us</h3>
                     <p>
-                        In a short span of 28 years, Dwarkadas J. Sanghvi College of Engineering
-                        (DJSCE), an Autonomous Institution, affiliated to the University of
-                        Mumbai and owned by SVKM has come a long way and has made its impact
-                        felt not only in the country, but also abroad. Our students have been
-                        performing exceedingly well in national and globally competent
-                        multinational companies and also in the universities in India and abroad
-                        as they pursue their higher education.
+                    Nurtured from the seed of a single great idea - to empower the traveller - Lunatic is a pioneer in India’s online travel industry. Founded in the year 2000 by Deep Kalra, Lunatic came to life to empower the Indian traveller with instant bookings and comprehensive choices. The company initiated its journey serving the US-India travel market offering a range of best-value products and services powered by technology and round-the-clock customer support.
+                    After consolidating its position in the market as a brand recognised for its reliability and transparency, Lunatic
                     </p>
                     <button className="btn flex" onClick={handleOnClick}>
                       Our Safety Measures <HiOutlineClipboardCheck className="icon"/>
