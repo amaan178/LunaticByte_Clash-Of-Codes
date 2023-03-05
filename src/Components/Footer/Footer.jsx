@@ -13,7 +13,7 @@ import { FiChevronRight } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <section className="footer">
+    <section className="footer" id="news">
       <div className="videoDiv">
         <video src={video1} loop autoPlay muted type="video/mp4"></video>
       </div>

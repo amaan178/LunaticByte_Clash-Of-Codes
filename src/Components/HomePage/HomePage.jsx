@@ -7,12 +7,12 @@ import Footer from '../Footer/Footer'
 
 export default function HomePage() {
   return (
-    <>
+    <div id="home">
     <Navbar/>
       <Home/>
       <About/>
       <Main/>
       <Footer/>
-    </>
+    </div>
   )
 }

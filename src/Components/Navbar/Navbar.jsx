@@ -13,6 +13,8 @@ import {
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
+import {Link} from 'react-scroll';
+
 const Navbar = () => {
   const[active, setActive] = useState('navBar')
   const navigate = useNavigate();
@@ -48,19 +50,19 @@ const Navbar = () => {
           <ul className="navLists flex">
             
             <li className="navItem">
-              <a href="#" className="navLink">Home</a>
+              <Link to="home" spy={true} smooth={true} offset={50} duration={500} className="navLink">Home</Link>
             </li>
 
             <li className="navItem">
-              <a href="#" className="navLink">About</a>
+            <Link to="about" spy={true} smooth={true} offset={50} duration={500} className="navLink">About</Link>
             </li>
 
             <li className="navItem">
-              <a href="#" className="navLink">Packages</a>
+            <Link to="packages" spy={true} smooth={true} offset={50} duration={500} className="navLink">Packages</Link>
             </li>
 
             <li className="navItem">
-              <a href="#" className="navLink">News</a>
+              <Link to="news" spy={true} smooth={true} offset={50} duration={500} className="navLink">News</Link>
             </li>
 
           <button className='btn' onClick={toggle}>

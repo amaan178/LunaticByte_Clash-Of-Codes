@@ -15,7 +15,7 @@ const AboutPage = () => {
     const navigate = useNavigate();
     const handleOnClick = () => navigate('/safety-measures');
 	return (
-		<div className='about'>
+		<div className='about' id="about">
             <div className='row custom-margin'>
                 <img title='About us' alt='About-us-content' src={img9} className="aboutBanner" />
                 <div className="secTitle">
