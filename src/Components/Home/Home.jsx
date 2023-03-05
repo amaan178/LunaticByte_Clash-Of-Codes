@@ -20,6 +20,11 @@ import img6 from "../../Assests/img6.png";
 import img7 from "../../Assests/img7.png";
 import img8 from "../../Assests/img8.png";
 import img9 from "../../Assests/img9.png";
+import img10 from "../../Assests/abdu_dhabi.png";
+import img11 from "../../Assests/sharjah.png";
+import img12 from "../../Assests/nyc.png";
+
+
 import { useNavigate } from "react-router";
 
 const Data = [
@@ -34,7 +39,27 @@ const Data = [
       "Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. The city is so rich and full of luxury hotels, cars, and people which can make it so attractive to tourists.",
   },
   {
-    id: 2,
+    id: 22,
+    imgSrc: img10,
+    descTitle: "Sharjah",
+    location: "UAE",
+    grade: "Ultramodern Architecture",
+    fees: "₹90,000/-",
+    description:
+      "Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. The city is so rich and full of luxury hotels, cars, and people which can make it so attractive to tourists.",
+  },
+  {
+    id: 22,
+    imgSrc: img11,
+    descTitle: "Abu Dhabi",
+    location: "UAE",
+    grade: "Ultramodern Architecture",
+    fees: "₹90,000/-",
+    description:
+      "Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. The city is so rich and full of luxury hotels, cars, and people which can make it so attractive to tourists.",
+  },
+  {
+    id: 27,
     imgSrc: img2,
     descTitle: "PARIS",
     location: "France",
@@ -77,7 +102,17 @@ const Data = [
     id: 6,
     imgSrc: img6,
     descTitle: "Las Vegas",
-    location: "NEVADA, U.S",
+    location: "USA",
+    grade: "The city of nightlife",
+    fees: "₹2,50,000/-",
+    description:
+      "The city of nightlife, entertainment and adventures, Vegas is a seductive mix of decadence, fun and lavish holiday experiences. Tourists love Vegas for its casinos, gaming nights, neon-lit neighbourhoods, food extravaganzas, shopping centres, wild parties, lush green parks and quirky museums.",
+  },
+  {
+    id: 6,
+    imgSrc: img12,
+    descTitle: "NYC",
+    location: "USA",
     grade: "The city of nightlife",
     fees: "₹2,50,000/-",
     description:
