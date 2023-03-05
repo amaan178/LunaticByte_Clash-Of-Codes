@@ -20,6 +20,7 @@ import img6 from "../../Assests/img6.png";
 import img7 from "../../Assests/img7.png";
 import img8 from "../../Assests/img8.png";
 import img9 from "../../Assests/img9.png";
+import { useNavigate } from "react-router";
 
 const Data = [
   {
@@ -130,6 +131,8 @@ export default function Home() {
     location: ""
   });
 
+  const navigate = useNavigate();
+
   const handleInputs = (event) => {
     const inputs = { [event.target.name]: event.target.value };
     setData({ ...data, ...inputs });
@@ -149,14 +152,13 @@ export default function Home() {
       setRangeValue(value);
     }
   };
-
   const handleRangeTypeChange = (event) => {
     const value = event.target.value;
     setRangeType(value);
   };
 
   const handleSubmit = () => {
-   console.log(data)
+    navigate("/maps")
   };
 
   const handleClick = () => {
@@ -199,7 +201,7 @@ export default function Home() {
       
             </div>
           </div>
-          <div className="searchOptions flex"   onClick={handleSubmit} >
+          <div className="searchOptions flex" onClick={handleSubmit} >
             <BsSearch className="icon" />
             <span>search via map</span>
           </div>
