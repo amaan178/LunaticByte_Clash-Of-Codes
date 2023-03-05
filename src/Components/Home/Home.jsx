@@ -158,7 +158,10 @@ export default function Home() {
    console.log(data)
   };
 
-  
+  const handleClick = () => {
+    window.location.href = 'https://www.tripadvisor.in/';
+  }
+
   
   return (
     <>
@@ -249,7 +252,7 @@ export default function Home() {
                       <p>{description}</p>
                     </div>
   
-                    <button className="btn flex">
+                    <button className="btn flex" onClick={handleClick}>
                       DETAILS <HiOutlineClipboardCheck className="icon" />
                     </button>
                   </div>

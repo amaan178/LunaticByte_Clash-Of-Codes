@@ -114,6 +114,9 @@ const Data = [
   // },
 ];
 export default function Main() {
+  const handleClick = () => {
+    window.location.href = 'https://tripadvisor.in';
+  }
   return (
     <section className="main container section" id="packages">
       <div className="secTitle">
@@ -147,8 +150,7 @@ export default function Main() {
                   <div className="desc">
                     <p>{description}</p>
                   </div>
-
-                  <button className="btn flex">
+                    <button className="btn flex" onClick={handleClick}>
                     DETAILS <HiOutlineClipboardCheck className="icon" />
                   </button>
                 </div>
