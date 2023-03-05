@@ -5,9 +5,18 @@ import {AiFillCloseCircle} from 'react-icons/ai'
 import {TbGridDots} from 'react-icons/tb'
 import Modal from "../Modal/Modal";
 import useModal from '../Modal/useModal';
-
+import { useNavigate } from 'react-router-dom'
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+} from "firebase/auth";
 const Navbar = () => {
   const[active, setActive] = useState('navBar')
+  const navigate = useNavigate();
+  const auth = getAuth()
   //Fucntion to toggle navBar
   const showNav = () =>{
     setActive('navBar activeNavbar')
@@ -19,6 +28,13 @@ const Navbar = () => {
   }
   const {isShowing, toggle} = useModal();
   
+
+  const handleSignOut = async () => {
+    signOut(auth).then(() => {
+      navigate("/login");
+    });
+  };
+
   return (
     <section className='navBarSection'>
       <header className='header flex'>
@@ -55,7 +71,7 @@ const Navbar = () => {
             hide={toggle}
           />
 
-          <button className='btn' onClick={handleShow}>
+          <button className='btn' onClick={handleSignOut}>
             <a href='#'>LOGOUT</a>
           </button>
 
