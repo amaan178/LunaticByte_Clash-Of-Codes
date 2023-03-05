@@ -130,7 +130,7 @@
   cursor: pointer;
 }
 .home .homeContent .cardDiv .searchOptions:hover {
-  background: var(--PrimaryColor);
+  background: hsl(199, 100%, 33%);
 }
 .home .homeContent .cardDiv .searchOptions .icon {
   font-size: 18px;
