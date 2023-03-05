@@ -149,3 +149,10 @@
   color: #8B8E98;
   text-decoration: underline;
 }/*# sourceMappingURL=Signin.css.map */
+
+.sign_body{
+  width: 100vw;
+  background-image: url("../../Assests/sign_image1.png");
+  background-repeat: no-repeat;
+  background-size:cover !important;
+}
