@@ -5,6 +5,7 @@ import SafetyMeasures from './Components/SafetyMeasures/SafetyMeasures';
 import Login from '../src/Components/Login/Login';
 import Signin from './Components/Signin/Signin';
 import HomePage from './Components/HomePage/HomePage';
+import GoogleMapLunatic from './Components/GoogleMapLunatic/GoogleMapLunatic'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path='/login' element={<Login />} />
           <Route exact path = "/sign-up" element={<Signin/>}/>
           <Route exact path="safety-measures" element={<SafetyMeasures />} />
+          <Route exact path="/maps" element={<GoogleMapLunatic/>}/>
         </Routes>
       </BrowserRouter>
     </>
